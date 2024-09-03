@@ -40,7 +40,7 @@ h6 {
 section,
 .section {
     color: #474747;
-    background-color: var(--background-color);
+    background-color:#08005EFF;
     padding: 60px 0;
     scroll-margin-top: 100px;
     overflow: clip;
@@ -76,7 +76,7 @@ section,
     width: 120px;
     height: 1px;
     display: inline-block;
-    background: var(--accent-color);
+    background:#1ACC8DFF;
     margin: 4px 10px;
 }
 
@@ -172,7 +172,7 @@ section,
 }
 
 .hero .btn-watch-video i {
-    color: var(--accent-color);
+    color: #1ACC8DFF;
     font-size: 32px;
     transition: 0.3s;
     line-height: 0;
@@ -180,11 +180,11 @@ section,
 }
 
 .hero .btn-watch-video:hover {
-    color: var(--accent-color);
+    color: #1ACC8DFF;
 }
 
 .hero .btn-watch-video:hover i {
-    color: color-mix(in srgb, var(--accent-color), transparent 15%);
+    color: color-mix(in srgb, #1ACC8DFF, transparent 15%);
 }
 
 .hero .animated {
