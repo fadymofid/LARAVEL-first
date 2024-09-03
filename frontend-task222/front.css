@@ -1,0 +1,362 @@
+
+
+
+
+
+:root {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    color: white;
+    background-color: #37517EFF;
+    font-family: "Raleway",  sans-serif;
+}
+
+a {
+    color: #1ACC8DFF;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: color-mix(in srgb, #1ACC8DFF, transparent 25%);
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white;
+    font-family: SansSerif;
+}
+
+
+
+section,
+.section {
+    color: #474747;
+    background-color: var(--background-color);
+    padding: 60px 0;
+    scroll-margin-top: 100px;
+    overflow: clip;
+}
+
+@media (max-width: 1199px) {
+
+    section,
+    .section {
+        scroll-margin-top: 66px;
+    }
+}
+
+.section-title {
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.section-title h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: color-mix(in srgb, white, transparent 50%);
+    position: relative;
+}
+
+.section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: var(--accent-color);
+    margin: 4px 10px;
+}
+
+.section-title div {
+    color: white;
+    margin: 0;
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: SansSerif;
+}
+
+
+.hero {
+    width: 100%;
+    min-height: 70vh;
+    position: relative;
+    padding: 120px 0 120px 0;
+    display: flex;
+    align-items: center;
+}
+
+.hero .hero-bg {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero:before {
+    content: "";
+    background: color-mix(in srgb, #040677, transparent 10%);
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 3;
+}
+
+.hero h1 {
+    margin: 0 0 20px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: color-mix(in srgb, white, transparent 30%);
+}
+
+.hero h1 span {
+    color:white;
+    border-bottom: 4px solid #1ACC8DFF;
+}
+
+.hero p {
+    color: color-mix(in srgb, white, transparent 30%);
+    margin: 5px 0 30px 0;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.hero .btn-get-started {
+    color: white;
+    background: #1ACC8DFF;
+    font-family: SansSerif;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 28px 12px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+}
+
+.hero .btn-get-started:hover {
+    color:white;
+    background: color-mix(in srgb, #1ACC8DFF, transparent 15%);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+}
+
+.hero .btn-watch-video {
+    font-size: 16px;
+    transition: 0.5s;
+    margin-left: 25px;
+    color: white;
+    font-weight: 600;
+}
+
+.hero .btn-watch-video i {
+    color: var(--accent-color);
+    font-size: 32px;
+    transition: 0.3s;
+    line-height: 0;
+    margin-right: 8px;
+}
+
+.hero .btn-watch-video:hover {
+    color: var(--accent-color);
+}
+
+.hero .btn-watch-video:hover i {
+    color: color-mix(in srgb, var(--accent-color), transparent 15%);
+}
+
+.hero .animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@media (max-width: 640px) {
+    .hero h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+
+    .hero .btn-get-started,
+    .hero .btn-watch-video {
+        font-size: 13px;
+    }
+}
+
+
+
+@keyframes move-forever1 {
+    0% {
+        transform: translate(85px, 0%);
+    }
+
+    100% {
+        transform: translate(-90px, 0%);
+    }
+}
+
+@keyframes move-forever2 {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+
+    100% {
+        transform: translate(85px, 0%);
+    }
+}
+
+@keyframes move-forever3 {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+
+    100% {
+        transform: translate(85px, 0%);
+    }
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+
+.about {
+    padding-top: 100px;
+    background-color: white;
+}
+
+.about .content h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    padding: 10px 20px;
+    background: color-mix(in srgb, #1ACC8DFF, transparent 95%);
+    color: #1ACC8DFF;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+.about .content h2 {
+    font-weight: 700;
+    color:#040677;
+}
+
+.about .content p:last-child {
+    margin-bottom: 0;
+
+}
+
+.about .content .read-more {
+    background: #1ACC8DFF;
+    color: black;
+    font-family: SansSerif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 12px 24px;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .content .read-more i {
+    font-size: 18px;
+    margin-left: 5px;
+    line-height: 0;
+    transition: 0.3s;
+}
+
+.about .content .read-more:hover {
+    background: color-mix(in srgb, #1ACC8DFF, transparent 20%);
+    padding-right: 19px;
+}
+
+.about .content .read-more:hover i {
+    margin-left: 10px;
+}
+
+.about .icon-box {
+    background-color: white;
+    padding: 50px 40px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease-out 0s;
+}
+
+.about .icon-box i {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 0;
+    transition: all 0.4s ease-out 0s;
+    background-color: color-mix(in srgb, #1ACC8DFF, transparent 95%);
+    color: #1ACC8DFF;
+}
+
+.about .icon-box h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color :#040677;
+}
+
+.about .icon-box p {
+    margin-bottom: 0;
+}
+
+.about .icon-box:hover i {
+    background-color: #1ACC8DFF;
+    color: white;
+}
+
+.about .icon-boxes .col-md-6:nth-child(2) .icon-box,
+.about .icon-boxes .col-md-6:nth-child(4) .icon-box {
+    margin-top: -40px;
+}
+
+@media (max-width: 768px) {
+
+    .about .icon-boxes .col-md-6:nth-child(2) .icon-box,
+    .about .icon-boxes .col-md-6:nth-child(4) .icon-box {
+        margin-top: 0;
+    }
+}
