@@ -1,0 +1,224 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif; /* Clean font */
+    background-color: #EBE9E1; /* Light beige background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #E43D12; /* Vibrant red background for navbar */
+    padding: 1rem 2rem; /* Padding for the navbar */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Shadow for navbar */
+}
+
+.navbar-brand {
+    color: #ffffff; /* White text color for brand */
+    font-weight: bold; /* Bold font for brand */
+}
+
+.navbar-brand:hover {
+    color: #D6536D; /* Pink color on hover */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* White text color for links */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFA2B6; /* Light pink color on hover */
+    text-decoration: underline; /* Underline on hover */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+/* Content Area Styles */
+.content {
+    padding: 20px; /* Padding for content area */
+    max-width: 1200px; /* Max width for content */
+    margin: auto; /* Center content */
+}
+
+/* Button Styles */
+.btn {
+    border-radius: 4px; /* Rounded corners for buttons */
+    font-size: 14px; /* Smaller font size */
+    padding: 10px 15px; /* Padding inside buttons */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.btn-success {
+    background-color: #1b9136; /* Vibrant green background for success */
+    color: #ffffff; /* White text color */
+}
+
+.btn-success:hover {
+    background-color: #306317; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly scale button on hover */
+}
+
+.btn-warning {
+    background-color: #EFB11D; /* Yellow background */
+    color: #ffffff; /* White text color */
+}
+
+.btn-warning:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+    transform: scale(1.05); /* Slightly scale button on hover */
+}
+
+/* Card Styles */
+.card {
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Shadow for the card */
+    overflow: hidden; /* Hide overflow */
+    background-color: #ffffff; /* White background */
+    transition: box-shadow 0.3s; /* Smooth transition */
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Enhanced shadow on hover */
+}
+
+.card-img-top {
+    height: 200px; /* Adjusted height */
+    object-fit: cover; /* Ensure the image covers the box */
+    width: 100%; /* Full width */
+    transition: transform 0.3s; /* Smooth transition */
+}
+
+.card-img-top:hover {
+    transform: scale(1.1); /* Slightly scale image on hover */
+}
+
+.card-body {
+    padding: 20px; /* Padding inside the card */
+    background-color: #F4F4F4; /* Light grey background for card body */
+}
+
+/* Info Section */
+.info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.info span {
+    display: block;
+    font-size: 16px; /* Adjust font size */
+    color: #333; /* Dark text color */
+    margin-bottom: 5px;
+}
+
+/* Form and Image Previews */
+.form-control {
+    border-radius: 4px; /* Rounded corners */
+    border: 1px solid #ced4da; /* Light border */
+    padding: 10px; /* Padding inside the input */
+    transition: border-color 0.3s; /* Smooth transition */
+}
+
+.form-control:focus {
+    border-color: #E43D12; /* Red border on focus */
+    box-shadow: 0 0 0 0.2rem rgba(227, 61, 18, 0.25); /* Shadow on focus */
+}
+
+.form-images {
+    display: flex;
+    flex-wrap: wrap; /* Wrap images */
+    gap: 10px; /* Space between images */
+}
+
+.form-images img {
+    height: 80px; /* Adjusted height */
+    width: 80px; /* Adjusted width */
+    object-fit: cover; /* Cover image */
+    border-radius: 4px; /* Rounded corners */
+    transition: transform 0.3s; /* Smooth transition */
+}
+
+.form-images img:hover {
+    transform: scale(1.05); /* Slightly scale image on hover */
+}
+
+.form-images a, .form-images span {
+    color: #ffffff; /* White text color */
+    background-color: #E43D12; /* Red background */
+    border-radius: 4px; /* Rounded corners */
+    padding: 5px; /* Padding inside the element */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.form-images a:hover {
+    background-color: #D6536D; /* Pink color on hover */
+    transform: scale(1.05); /* Slightly scale on hover */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.5rem 1rem;
+    }
+
+    .content {
+        padding: 10px;
+    }
+}
+
+/* Cart Button Styles */
+.btn-warning {
+    background-color: #EFB11D; /* Yellow background for cart button */
+    color: #ffffff; /* White text color */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Adjust font size */
+    padding: 10px 15px; /* Padding inside the button */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.btn-warning:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+    transform: scale(1.05); /* Slightly scale button on hover */
+}
+
+.fa-shopping-cart {
+    font-size: 1.5rem; /* Size of the cart icon */
+    margin-right: 5px; /* Space between icon and text */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+.fa-shopping-cart:hover {
+    color: #EFB11D; /* Change color on hover */
+}
+
+/* Contact Us Section */
+.contact_us {
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Collapse table borders */
+}
+
+table tr td img {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+    border-radius: 4px; /* Rounded corners */
+    transition: transform 0.3s; /* Smooth transition */
+}
+
+table tr td img:hover {
+    transform: scale(1.1); /* Slightly scale image on hover */
+}
+.hidden {
+    display: none; /* Hide elements with this class */
+}
